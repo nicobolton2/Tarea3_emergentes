@@ -4,51 +4,50 @@
 ##### Ruta principal
 `http://35.153.241.7:5000/`
 
-##### Ruita de inicio:
+##### Ruita de inicio
 `/` 
 
 ##### Ruta de login `username = admin`, `password = admin` por defecto
-`'/login', methods=['POST']`      
+Metodo POST: `/login`      
 
 ## Compañia
 #### Agregar compañia 
-metodo post:
-`'/api/addCompany', methods=['POST']`
+Metodo POST: `'/api/addCompany', methods=['POST']`
 
 ## Ubicación
 #### Agregar locación
-`'/api/addLocation', methods=['POST']`
+Metodo POST: `/api/addLocation`
 #### Obtener ubicación
-`'/api/getLocation/<company_api_key>/<location_id>', methods=['GET']`
+Metodo GET: `/api/getLocation/<company_api_key>/<location_id>`
 #### Obtener ubicaciones
-`'/api/getLocations/<company_api_key>', methods=['GET']`
+Metodo GET: `/api/getLocations/<company_api_key>`
 #### Cambiar ubicación
-`'/api/updateLocation', methods=['PUT']`
+Metodo PUT: `/api/updateLocation`
 #### Borrar ubicación
-`'/api/deleteLocation', methods=['DELETE']`
+Metodo DELETE: `/api/deleteLocation`
 
 ## Sensor
 #### Agregar sensor
-`'/api/addSensor', methods=['POST']`
+Metodo POST: `/api/addSensor`
 #### Obtener Sensor
-`'/api/getSensor/<company_api_key>/<sensor_id>', methods=['GET']`
+Metodo GET: `/api/getSensor/<company_api_key>/<sensor_id>`
 #### Obtener sensores
-`'/api/getSensors/<company_api_key>/<location_id>', methods=['GET']`
+Metodo GET: `/api/getSensors/<company_api_key>/<location_id>`
 #### Cambiar sensor 
-`'/api/updateSensor', methods=['PUT']`
+Metodo PUT: `/api/updateSensor`
 #### Borrar sensor 
-`'/api/deleteSensor', methods=['DELETE']`
+Metodo DELETE: `/api/deleteSensor`
 
 
 ## Datos del sensor
 #### Datos del sensor
-`'/api/sensorData', methods=['POST']`
+Metodo POST: `/api/sensorData`
 #### obtener datos del sensor
-`'/api/getSensorData/<company_api_key>/from/<time1>/to/<time2>/<sensor_id>/', methods=['GET']`
+Metodo GET: `/api/getSensorData/<company_api_key>/from/<time1>/to/<time2>/<sensor_id>/`
 #### Cambiar datos del sensor
-`'/api/updateSensorData', methods=['PUT']`
+Metodo PUT: `/api/updateSensorData`
 #### Cambiar datos del sensor
-`'/api/deleteSensorData', methods=['DELETE']`
+Metodo DELETE: `/api/deleteSensorData`
 
 
 
