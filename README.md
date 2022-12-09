@@ -8,7 +8,7 @@
 + Ruta de login `username = admin`, `password = admin` por defecto (Metodo POST): `/login`      
 
 ## Compañia
-+ Agregar compañia (Metodo POST): `/api/addCompany', methods=['POST']`
++ Agregar compañia (Metodo POST): `/api/addCompany`
 
 ## Ubicación
 + Agregar locación (Metodo POST): `/api/addLocation`
