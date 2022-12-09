@@ -1,8 +1,10 @@
-from flask import Flask, request, jsonify
-from DataBase import Admin, Company, Location, Sensor, SensorData, db
+from flask import request, jsonify, Flask
+from DataBase import Location, Company, Sensor, SensorData, db, Admin
 from init import create_app
 import time
 app= create_app()
+
+
 #inicio
 @app.route('/')
 def init():
@@ -38,8 +40,6 @@ def addCompany():
                 'message': 'Nueva compañia agragada con exito'
             })
         else:   
-            # console log
-            print(company_name, company_api_key)
             company = Company(company_name=company_name, company_api_key=company_api_key)
 
             db.session.add(company)
@@ -67,9 +67,7 @@ def addLocation():
             return jsonify({
                 'message': 'Nueva locacion agregada con exito'
             })
-        else:   
-            # console log
-            print(company_id, location_name, location_country, location_city, location_meta)
+        else:
             location = Location(company_id=company_id, location_name=location_name, location_country=location_country, location_city=location_city, location_meta=location_meta)
             location.save()
             return jsonify({
@@ -81,10 +79,7 @@ def getLocation(company_api_key, location_id):
     company = Company.query.filter_by(company_api_key=company_api_key).first()
     if company:
         location = Location.query.filter_by(ID=location_id).first()
-        print(location)
         if location:
-    
-            print(company_api_key, location_id)
             return jsonify({
                 'location': location.to_json()
             })
@@ -174,7 +169,6 @@ def addSensor():
     admin = Admin.query.filter_by(Username=user, Password=password).first()    
     
     if admin: 
-        print(location_id, sensor_name, sensor_category, sensor_meta, sensor_api_key)
         sensor = Sensor(location_id=location_id, sensor_name=sensor_name, sensor_category=sensor_category, sensor_meta=sensor_meta, sensor_api_key=sensor_api_key)
         sensor.save()
         return jsonify({
@@ -336,4 +330,4 @@ def deleteSensorData():
         'message': 'Error'
     })
 
-app.run()
+app.run(host = '0.0.0.0' , port = 5000)
