@@ -6,7 +6,7 @@
 
 Resumen de rutas:
 
-/ = ruita de inicio
+`/` = ruita de inicio
 `'/login', methods=['POST']`      ruta para entrar como administrador
 
 `'/api/addCompany', methods=['POST']`
