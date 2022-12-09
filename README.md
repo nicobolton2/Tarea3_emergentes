@@ -4,11 +4,12 @@
 
 `http://35.153.241.7:5000/`
 
-Resumen de rutas:
+#Resumen de rutas:
+##ruita de inicio:
+`/` 
 
-`/` = ruita de inicio
-
-`'/login', methods=['POST']`      ruta para entrar como administrador
+##ruta de login `username = admin`, `password = admin` por defecto
+`'/login', methods=['POST']`      
 
 `'/api/addCompany', methods=['POST']`
 
