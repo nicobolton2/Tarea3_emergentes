@@ -27,7 +27,7 @@
 
 ## Datos del sensor
 + Datos del sensor (Metodo POST): `/api/sensorData`
-+ Obtener datos del sensor (Metodo GET): `/api/getSensorData/<company_api_key>/from/<time1>/to/<time2>/<sensor_id>/`
++ Obtener datos del sensor (Metodo GET): `/api/getSensorData/<company_api_key>/<sensor_id>/`
 + Cambiar datos del sensor (Metodo PUT): `/api/updateSensorData`
 + Cambiar datos del sensor (Metodo DELETE): `/api/deleteSensorData`
 
