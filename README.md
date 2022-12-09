@@ -27,22 +27,17 @@ Metodo PUT: `/api/updateLocation`
 Metodo DELETE: `/api/deleteLocation`
 
 ## Sensor
-#### Agregar sensor
-Metodo POST: `/api/addSensor`
-#### Obtener Sensor
-Metodo GET: `/api/getSensor/<company_api_key>/<sensor_id>`
-#### Obtener sensores
-Metodo GET: `/api/getSensors/<company_api_key>/<location_id>`
-#### Cambiar sensor 
-Metodo PUT: `/api/updateSensor`
-#### Borrar sensor 
-Metodo DELETE: `/api/deleteSensor`
++ Agregar sensor (Metodo POST): `/api/addSensor`
++ Obtener Sensor (Metodo GET): `/api/getSensor/<company_api_key>/<sensor_id>`
++ Obtener sensores (Metodo GET): `/api/getSensors/<company_api_key>/<location_id>`
++ Cambiar sensor (Metodo PUT): `/api/updateSensor`
++ Borrar sensor (Metodo DELETE): `/api/deleteSensor`
 
 
 ## Datos del sensor
 #### Datos del sensor
 Metodo POST: `/api/sensorData`
-#### obtener datos del sensor
+#### Obtener datos del sensor
 Metodo GET: `/api/getSensorData/<company_api_key>/from/<time1>/to/<time2>/<sensor_id>/`
 #### Cambiar datos del sensor
 Metodo PUT: `/api/updateSensorData`
