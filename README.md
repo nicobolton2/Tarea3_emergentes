@@ -1,13 +1,13 @@
 # Arquitecturas Emergentes flask sqlite
 
-# Resumen de rutas:
-## Ruta principal
+## Resumen de rutas:
+### Ruta principal
 `http://35.153.241.7:5000/`
 
-## Ruita de inicio:
+### Ruita de inicio:
 `/` 
 
-## Ruta de login `username = admin`, `password = admin` por defecto
+### Ruta de login `username = admin`, `password = admin` por defecto
 `'/login', methods=['POST']`      
 
 `'/api/addCompany', methods=['POST']`
