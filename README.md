@@ -12,6 +12,7 @@
 
 ## Compañia
 #### Agregar compañia 
+metodo post:
 `'/api/addCompany', methods=['POST']`
 
 ## Ubicación
