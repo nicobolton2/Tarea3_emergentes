@@ -4,8 +4,6 @@
 ##### Ruta principal
 `http://35.153.241.7:5000/`
 
-## Ruita de inicio 
- +`/` 
 ## Login
 + Ruta de login `username = admin`, `password = admin` por defecto (Metodo POST): `/login`      
 
