@@ -7,7 +7,7 @@
 #### Ruita de inicio:
 `/` 
 
-#### Ruta de login `username = admin`, `password = admin` por defecto
+##### Ruta de login `username = admin`, `password = admin` por defecto
 `'/login', methods=['POST']`      
 
 `'/api/addCompany', methods=['POST']`
